@@ -5,6 +5,6 @@ app/config/development/*
 app/config/packages/pragmarx/glottos/config.php
 composer.phar
 composer.lock
-glottos.apache2.conf
+glottosAdmin.apache2.conf
 .DS_Store
 Thumbs.db

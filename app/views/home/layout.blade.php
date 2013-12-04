@@ -13,7 +13,7 @@
         <script src="http://laravel.com/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-            <header>
+        <header>
         <div class="container">
             <a href="http://laravel.com/" title="Laravel PHP Framework" class="logo">&nbsp;</a>
             <nav class="menu">
@@ -23,7 +23,13 @@
                     <li><a href="http://laravel.com/api" title="Laravel Framework API">{{'API'}}</a></li>
                     <li><a href="https://github.com/laravel/laravel" title="Github">{{'Github'}}</a></li>
                     <li><a href="http://forums.laravel.io/" title="Laravel Forums">{{'Forums'}}</a></li>
-                    <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">{{'Twitter'}}</a></li>
+                    
+                    <li>
+                        <a href="{{ $switchLanguageUrl }}">
+                            <i  class="fa fa-eye"></i> {{ $switchLanguageTitle }}
+                        </a>
+                    </li>
+
                 </ul>
             </nav>
             <a class="to-top">{{'Back to Top'}}</a>
@@ -101,6 +107,11 @@
             <a href="http://laravel.com/" title="Laravel PHP Framework" class="logo"><img src="http://laravel.com/img/footer_logo.png" alt="Laravel PHP Framework"></a>
             <nav class="menu">
                 <ul>
+                    <li>
+                        <a href="{{ $switchLanguageUrl }}">
+                            <i  class="fa fa-eye"></i> {{ $switchLanguageTitle }}
+                        </a>
+                    </li>
                     <li><a href="http://laravel.com/" title="Welcome">{{'Welcome'}}</a></li>
                     <li><a href="http://laravel.com/docs" title="Documentation">{{'Documentation'}}</a></li>
                     <li><a href="http://laravel.com/api" title="Laravel Framework API">{{'API'}}</a></li>

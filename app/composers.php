@@ -7,7 +7,7 @@ View::composer('home.layout', function($view)
 	if (is_null($lang) || $lang === 'en')
 	{
 		$title = 'português';
-		$url = URL::route('language.select', ['pt-br']);
+		$url = URL::route('language.select', ['pt_BR']);
 	}
 	else
 	{

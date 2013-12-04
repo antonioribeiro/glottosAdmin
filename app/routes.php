@@ -14,20 +14,6 @@
 Route::get('/test', function()
 {
 
-echo "<pre>";
-DB::connection()->beginTransaction();
-
-var_dump( DB::select(DB::raw('select * from users for update')) );
-var_dump( DB::select(DB::raw("update users set name = 'Antonio Carlos Ribeiro' ")) );
-
-DB::connection()->commit();
-
-var_dump( DB::select(DB::raw('select * from users')) );
-
-echo "</pre>";
-	
-	die;
-
 	Glottos::translate('PHOTOGRAPHY');
 
 	k( Lang::trans('PHOTOGRAPHY', array(), null, 'en') );
