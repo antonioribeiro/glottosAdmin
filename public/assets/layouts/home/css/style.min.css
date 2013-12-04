@@ -1,0 +1,713 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
+@import url(http://fonts.googleapis.com/css?family=Voltaire);
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+
+/**
+ * Default
+ */
+html
+{
+    font-size: 62.5%;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #292929;
+    background: #000;
+}
+
+h1, h2, h3
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.bottom
+{
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.language
+{
+    color: #FFF;
+    font-size: 15px;
+    position: absolute;
+    top: 67px;
+}
+
+.email a
+{
+    color: #000;
+}
+
+a
+{
+    color: #ffd675;
+}
+
+a:hover
+{
+    color: #ffd675;
+    text-decoration: none;
+}
+
+p, li, span
+{
+    line-height: 20px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#logo
+{
+    color: #ffd675;
+    line-height: 60px;
+    font-weight: 300;
+    font-family: 'Voltaire', sans-serif;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/**
+ * Header
+ */
+#header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+}
+
+#header .navbar
+{
+    margin-bottom: 10px;
+    background: none;
+    filter: none;
+        -moz-transition: all 600ms;
+        -webkit-transition: all 600ms;
+        -o-transition: all 600ms;
+    transition: all 600ms;
+        -webkit-border-bottom-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#header .navbar:hover
+{
+    background-color: #888;
+    background-color: rgba(0, 0, 0, 0.8);
+        -moz-transition: all 600ms;
+        -webkit-transition: all 600ms;
+        -o-transition: all 600ms;
+    transition: all 600ms;
+}
+
+#header .navbar-inner
+{
+    background: none;
+    border: none;
+        -webkit-border-radius: none;
+        -moz-border-radius: none;
+        -o-border-radius: none;
+    border-radius: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    filter: none;
+}
+
+#header .navbar .brand
+{
+    text-shadow: none;
+    line-height: 80px;
+}
+
+#header .navbar .nav > li
+{
+    line-height: normal;
+}
+
+#header .navbar .nav > li > a
+{
+    color: #fff;
+    text-shadow: none;
+    padding: 15px 0 9px 0;
+    margin: 20px 20px 26px 20px;
+    font-size: 23px;
+    font-size: 2.3rem;
+    font-weight: 400;
+    border-bottom: solid transparent 2px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#header .navbar .nav > li > a:hover, #header .navbar .nav > li > a.active
+{
+        -moz-transition: all 600ms;
+        -webkit-transition: all 600ms;
+        -o-transition: all 600ms;
+    transition: all 600ms;
+    color: #ffd675;
+    border-bottom: solid #ffd675 2px;
+    background: none;
+    filter: none;
+}
+
+/**
+ * Intro
+ */
+#intro h2
+{
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 90px;
+    font-size: 9rem;
+    margin: 0 0 10px 0;
+    font-family: 'Voltaire', sans-serif;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.35);
+    line-height: 90px;
+}
+
+#intro h3
+{
+    color: #ffd675;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-size: 4rem;
+    font-family: 'Sanchez', serif;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.35);
+    line-height: normal;
+}
+
+/**
+ * Default page
+ */
+.header
+{
+    background-color: #888;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 45px 0;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header h2
+{
+    color: whitesmoke;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 90px;
+    font-size: 9rem;
+    margin: 25px 0;
+    font-family: 'Voltaire', sans-serif;
+}
+
+.header h3
+{
+    color: #ffd675;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: 'Sanchez', serif;
+}
+
+.content
+{
+    background: whitesmoke;
+    padding: 90px;
+    text-align: justify;
+    text-justify: inter-word;
+        -webkit-border-bottom-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pull-center
+{
+    text-align: center;
+}
+
+.line
+{
+    margin: 80px;
+}
+
+.quote
+{
+    text-align: center;
+    font-size: 30px;
+    font-size: 3rem;
+    line-height: 40px;
+}
+
+.quote a
+{
+    color: #000;
+}
+
+.customer
+{
+    text-align: center;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 40px;
+}
+
+/**
+ * Features
+ */
+.feature
+{
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 64px;
+}
+
+.feature i
+{
+    color: #ffd675;
+    margin-right: 7px;
+}
+
+/**
+ * Box
+ */
+.box
+{
+    width: 100%;
+    min-height: 100%;
+}
+
+/**
+ * Portfolio
+ */
+.portfolio .item a
+{
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.portfolio .item h3
+{
+    line-height: normal;
+    margin: 20px 10px 5px 10px;
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+.portfolio .item p
+{
+    line-height: normal;
+    margin: 5px 10px 40px 10px;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+/**
+ * Lightbox
+ */
+
+#lightbox
+{
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 100;
+}
+
+#lightbox img
+{
+    max-width: 940px;
+    margin-top: 40px;
+}
+
+/**
+ * Google Maps
+ */
+#map_canvas
+{
+    height: 290px;
+}
+
+/**
+ * Back to top
+ */
+#back-top
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: #fff;
+    background: #333;
+    background: rgba(51, 51, 51, 0.75);
+        -moz-transition: all 600ms;
+        -webkit-transition: all 600ms;
+        -o-transition: all 600ms;
+    transition: all 600ms;
+}
+
+#back-top:hover
+{
+    text-decoration: none;
+    background: #ffd675;
+    background: rgba(255, 214, 117, 0.75);
+        -moz-transition: all 600ms;
+        -webkit-transition: all 600ms;
+        -o-transition: all 600ms;
+    transition: all 600ms;
+}
+
+/**
+ * CSS Media Queries
+ */
+
+/* Large desktop */
+@media (min-width: 1200px)
+{
+}
+
+/* Normal desktop */
+@media (min-width: 980px) and (max-width: 1199px)
+{
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px)
+{
+    body
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #header .navbar .nav.pull-right
+    {
+        margin-right: 15px;
+    }
+
+    #header .navbar .btn-navbar
+    {
+        margin-top: 33px;
+        text-shadow: none;
+        background: none;
+        filter: none;
+        *background-color: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    #header .navbar .btn-navbar .icon-bar
+    {
+        background: #ffd675;
+            -webkit-border-radius: none;
+            -moz-border-radius: none;
+        border-radius: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+        box-shadow: none;
+        width: 30px;
+        height: 4px;
+    }
+
+    #header .navbar .nav > li
+    {
+        line-height: normal;
+        text-align: right;
+    }
+    
+    #header .navbar .nav > li > a
+    {
+        color: #fff;
+        text-shadow: none;
+        padding: 0 0 10px 0;
+        margin: 0;
+        font-size: 23px;
+        font-size: 2.3rem;
+        font-weight: 300;
+        border: none;
+    }
+    
+    #header .navbar .nav > li > a:hover, #header .navbar .nav > li > a.active
+    {
+        color: #ffd675;
+        border: none;
+        background: none;
+        filter: none;
+    }
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+{
+    body
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #header .navbar .nav.pull-right
+    {
+        margin-right: 15px;
+    }
+
+    #header .navbar .btn-navbar
+    {
+        margin-top: 33px;
+        text-shadow: none;
+        background: none;
+        filter: none;
+        *background-color: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    #header .navbar .btn-navbar .icon-bar
+    {
+        background: #ffd675;
+            -webkit-border-radius: none;
+            -moz-border-radius: none;
+        border-radius: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+        box-shadow: none;
+        width: 30px;
+        height: 4px;
+    }
+
+    #header .navbar .nav > li
+    {
+        line-height: normal;
+        text-align: right;
+    }
+    
+    #header .navbar .nav > li > a
+    {
+        color: #fff;
+        text-shadow: none;
+        padding: 0 0 10px 0;
+        margin: 0;
+        font-size: 23px;
+        font-size: 2.3rem;
+        font-weight: 300;
+        border: none;
+    }
+    
+    #header .navbar .nav > li > a:hover, #header .navbar .nav > li > a.active
+    {
+        color: #ffd675;
+        border: none;
+        background: none;
+        filter: none;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px)
+{
+    body
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #header .navbar .nav.pull-right
+    {
+        margin-right: 10px;
+    }
+
+    #header .navbar-inner
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #header .brand
+    {
+        width: 160px;
+    }
+
+    #header .navbar .btn-navbar
+    {
+        margin-top: 33px;
+        text-shadow: none;
+        background: none;
+        filter: none;
+        *background-color: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        margin-right: 0;
+    }
+
+    #header .navbar .btn-navbar .icon-bar
+    {
+        background: #ffd675;
+            -webkit-border-radius: none;
+            -moz-border-radius: none;
+        border-radius: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+        box-shadow: none;
+        width: 30px;
+        height: 4px;
+    }
+
+    #header .navbar .nav > li
+    {
+        line-height: normal;
+        text-align: right;
+    }
+    
+    #header .navbar .nav > li > a
+    {
+        color: #fff;
+        text-shadow: none;
+        padding: 0 0 10px 0;
+        margin: 0;
+        font-size: 23px;
+        font-size: 2.3rem;
+        font-weight: 300;
+        border: none;
+    }
+    
+    #header .navbar .nav > li > a:hover, #header .navbar .nav > li > a.active
+    {
+        color: #ffd675;
+        border: none;
+        background: none;
+        filter: none;
+    }
+
+    #intro h2
+    {
+        font-size: 40px;
+        font-size: 4rem;
+        margin: 0 0 10px 0;
+        line-height: 40px;
+    }
+
+    #intro h3
+    {
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+    .header
+    {
+        padding: 15px 0;
+    }
+
+    .header h2
+    {
+        font-size: 30px;
+        font-size: 3rem;
+        line-height: 30px;
+        margin: 10px 0 0 0;
+    }
+
+    .header h3
+    {
+        font-size: 16px;
+        font-size: 1.6rem;
+        margin: 10px 0 0 0;
+    }
+
+    .content
+    {
+        padding: 20px;
+    }
+
+    #map_canvas
+    {
+        margin-bottom: 20px;
+    }
+
+    #back-top
+    {
+        bottom: 10px;
+        right: 10px;
+        padding: 5px 10px;
+    }
+
+}

@@ -1,0 +1,10 @@
+.elasticbeanstalk/
+/bootstrap/compiled.php
+/vendor
+app/config/development/*
+app/config/packages/pragmarx/glottos/config.php
+composer.phar
+composer.lock
+glottos.apache2.conf
+.DS_Store
+Thumbs.db
