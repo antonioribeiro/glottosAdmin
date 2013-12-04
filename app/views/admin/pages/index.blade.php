@@ -30,12 +30,6 @@
 							<td>{{ $language->regional_name }}
 								<div  class="pull-right">
 									<a href="{{ URL::route('admin.languages.'.($language->enabled ? 'disable' : 'enable'), $language->id) }}">
-										<button type="button" class="btn btn-default btn-xs">
-											translations
-										</button>
-									</a>
-
-									<a href="{{ URL::route('admin.languages.'.($language->enabled ? 'disable' : 'enable'), $language->id) }}">
 										<button type="button" class="btn btn-{{ $language->enabled ? 'danger' : 'success' }} btn-xs">
 											@if($language->enabled)
 												disable

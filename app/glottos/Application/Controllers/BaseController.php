@@ -1,4 +1,4 @@
-<?php namespace Admin\Controllers;
+<?php namespace Application\Controllers;
 
 use \Controller;
 use \View;

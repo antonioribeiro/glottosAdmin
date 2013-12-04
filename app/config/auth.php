@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'model' => 'Admin\Repositories\User',
+	'model' => 'Application\Repositories\User',
 
 	/*
 	|--------------------------------------------------------------------------

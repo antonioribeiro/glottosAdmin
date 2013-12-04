@@ -20,7 +20,7 @@ App::before(function($request)
 	|
 	*/
 
-	Admin\Services\Language::guess( 
+	Application\Services\Language::guess( 
 									Auth::guest() ? null : Auth::user(), 
 									App::make('session'),
 									App::make('glottos')

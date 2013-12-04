@@ -1,4 +1,4 @@
-<?php namespace Admin\Services;
+<?php namespace Application\Services;
 
 class Language {
 

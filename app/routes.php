@@ -76,37 +76,37 @@ Route::get('/test', function()
 	// Glottos::addTranslation('my:message', 'Esta é a minha mensagem do Módulo 2', 'pt-br', 2);
 });
 
-Route::get('/', array('as' => 'home', 'uses' => 'Admin\Controllers\HomeController@index'));
+Route::get('/', array('as' => 'home', 'uses' => 'Application\Controllers\HomeController@index'));
 
-Route::get('language/{lang}', array('as' => 'language.select', 'uses' => 'Admin\Controllers\LanguageController@select'));
+Route::get('language/{lang}', array('as' => 'language.select', 'uses' => 'Application\Controllers\LanguageController@select'));
 
-Route::get('login', array('as' => 'login.form', 'uses' => 'Admin\Controllers\LogonController@form'));
+Route::get('login', array('as' => 'login.form', 'uses' => 'Application\Controllers\LogonController@form'));
 
-Route::post('login', array('as' => 'login.do', 'uses' => 'Admin\Controllers\LogonController@login'));
+Route::post('login', array('as' => 'login.do', 'uses' => 'Application\Controllers\LogonController@login'));
 
-Route::get('logout', array('as' => 'logout.do', 'uses' => 'Admin\Controllers\LogonController@logout'));
+Route::get('logout', array('as' => 'logout.do', 'uses' => 'Application\Controllers\LogonController@logout'));
 
 Route::group(array('before' => 'auth'), function()
 {
 
-	Route::get('admin', array('as' => 'admin', 'uses' => 'Admin\Controllers\Admin\AdminController@index'));
+	Route::get('admin', array('as' => 'admin', 'uses' => 'Application\Controllers\Admin\AdminController@index'));
 
-	Route::get('languages/stats', array('as' => 'admin.languages.stats', 'uses' => 'Admin\Controllers\Admin\LanguagesController@stats'));
+	Route::get('languages/stats', array('as' => 'admin.languages.stats', 'uses' => 'Application\Controllers\Admin\LanguagesController@stats'));
 
-	Route::get('languages/translate', array('as' => 'admin.languages.translate', 'uses' => 'Admin\Controllers\Admin\LanguagesController@translate'));
+	Route::get('languages/translate', array('as' => 'admin.languages.translate', 'uses' => 'Application\Controllers\Admin\LanguagesController@translate'));
 
-	Route::get('languages/translation/next/{primaryLanguage}/{secondaryLanguage}', array('as' => 'admin.translation.next', 'uses' => 'Admin\Controllers\Admin\LanguagesController@next'));
+	Route::get('languages/translation/next/{primaryLanguage}/{secondaryLanguage}', array('as' => 'admin.translation.next', 'uses' => 'Application\Controllers\Admin\LanguagesController@next'));
 
-	Route::get('languages/translation/edit/{message}/{primaryLanguage}/{secondaryLanguage}', array('as' => 'admin.translation.edit', 'uses' => 'Admin\Controllers\Admin\LanguagesController@edit'));
+	Route::get('languages/translation/edit/{message}/{primaryLanguage}/{secondaryLanguage}', array('as' => 'admin.translation.edit', 'uses' => 'Application\Controllers\Admin\LanguagesController@edit'));
 
-	Route::post('languages/translation/store/{message}/{primaryLanguage}/{secondaryLanguage}', array('as' => 'admin.translation.store', 'uses' => 'Admin\Controllers\Admin\LanguagesController@store'));
+	Route::post('languages/translation/store/{message}/{primaryLanguage}/{secondaryLanguage}', array('as' => 'admin.translation.store', 'uses' => 'Application\Controllers\Admin\LanguagesController@store'));
 
-	Route::get('languages/show/{primary}/{secondary?}', array('as' => 'admin.languages.show', 'uses' => 'Admin\Controllers\Admin\LanguagesController@show'));
+	Route::get('languages/show/{primary}/{secondary?}', array('as' => 'admin.languages.show', 'uses' => 'Application\Controllers\Admin\LanguagesController@show'));
 
-	Route::get('languages/{filter?}', array('as' => 'admin.languages.index', 'uses' => 'Admin\Controllers\Admin\LanguagesController@index'));
+	Route::get('languages/{filter?}', array('as' => 'admin.languages.index', 'uses' => 'Application\Controllers\Admin\LanguagesController@index'));
 
-	Route::get('languages/{id}/enable', array('as' => 'admin.languages.enable', 'uses' => 'Admin\Controllers\Admin\LanguagesController@enableLanguage'));
+	Route::get('languages/{id}/enable', array('as' => 'admin.languages.enable', 'uses' => 'Application\Controllers\Admin\LanguagesController@enableLanguage'));
 
-	Route::get('languages/{id}/disable', array('as' => 'admin.languages.disable', 'uses' => 'Admin\Controllers\Admin\LanguagesController@disableLanguage'));
+	Route::get('languages/{id}/disable', array('as' => 'admin.languages.disable', 'uses' => 'Application\Controllers\Admin\LanguagesController@disableLanguage'));
 
 });

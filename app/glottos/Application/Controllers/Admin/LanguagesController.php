@@ -1,7 +1,7 @@
-<?php namespace Admin\Controllers\Admin;
+<?php namespace Application\Controllers\Admin;
 
 use PragmaRX\Glottos\Support\Locale;
-use Admin\Controllers\BaseController;
+use Application\Controllers\BaseController;
 use \Glottos;
 use \View;
 use \Session;

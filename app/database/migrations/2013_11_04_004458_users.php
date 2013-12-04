@@ -24,10 +24,10 @@ class Users extends Migration {
 			$table->timestamps();
 		});
 
-		$user = new User;
+		$user = new Application\Repositories\User;
 		$user->name = 'Antonio Carlos Ribeiro';
 		$user->email = 'acr@antoniocarlosribeiro.com';
-		$user->password = '$2y$08$1UemL1yG5MPfR3B4lvRwgeXDoIctBbfWYyiU5mefdhq1jpQTMWQOO';
+		$user->password = '$2y$08$d92Fxk55YWRnTGpQ5GNdGuBDgBnyO.l6T1wM1L6Cfe.DoA9EZxAe.';
 		$user->save();
 	}
 

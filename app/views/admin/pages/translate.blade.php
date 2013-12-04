@@ -31,13 +31,32 @@
 
 				<div class="form-group">
 					<label>{{ $localeSecondary->regional_name }}</label>
-					<textarea class="form-control" name="message" rows="6">{{ $secondaryMessage }}</textarea>
+					<textarea class="form-control" id="message" name="message" rows="6">{{ $secondaryMessage }}</textarea>
 					<p class="help-block">This is where your translation goes.</p>
 				</div>
 
-				<button type="submit" class="btn btn-danger">Save translation</button>
+				<button type="submit" id="submit" class="btn btn-danger">Save translation</button>
 			</form>
 		</div>
 	</div>
+
+@stop
+
+@section('javascript')
+
+	window.onload = function() {
+		document.getElementById("message").focus();
+	}
+
+	document.getElementById('message').onkeypress = function(e) {
+
+		if (e.ctrlKey && (e.keyCode == 13 || e.keyCode == 10)) {
+
+			document.getElementById("submit").click();
+
+		}
+
+		return event
+	}
 
 @stop

@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'UymwAcgNEErjLTbawOokj8Fv49d92S2d',
 
 	/*
 	|--------------------------------------------------------------------------

@@ -25,8 +25,8 @@
                     <li><a href="http://forums.laravel.io/" title="Laravel Forums">{{'Forums'}}</a></li>
                     
                     <li>
-                        <a href="{{ $switchLanguageUrl }}">
-                            <i  class="fa fa-eye"></i> {{ $switchLanguageTitle }}
+                        <a href="{{ $switchLanguageUrl }}" style="background-color:blue; color=white;">
+                            {{ $switchLanguageTitle }}
                         </a>
                     </li>
 

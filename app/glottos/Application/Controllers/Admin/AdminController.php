@@ -1,6 +1,6 @@
-<?php namespace Admin\Controllers\Admin;
+<?php namespace Application\Controllers\Admin;
 
-use Admin\Controllers\BaseController;
+use Application\Controllers\BaseController;
 use \Redirect;
 
 class AdminController extends BaseController {

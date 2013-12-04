@@ -1,4 +1,4 @@
-<?php namespace Admin\Controllers;
+<?php namespace Application\Controllers;
 
 use \View;
 use \Auth;
@@ -14,14 +14,14 @@ class LogonController extends BaseController {
 
 	public function login()
 	{
-		$cred = ['email' => Input::get('email'), 'password' => Input::get('password')];
+		$credentials = ['email' => Input::get('email'), 'password' => Input::get('password')];
 
 		if(Auth::check())
 		{
 			Auth::logout();
 		}
 
-		if (Auth::attempt($cred))
+		if (Auth::attempt($credentials))
 		{
 			return Redirect::intended();
 		}

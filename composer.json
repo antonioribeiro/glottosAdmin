@@ -29,7 +29,7 @@
             "app/tests/TestCase.php"
         ],
         "psr-0": {
-            "Admin": "app/glottos"
+            "Application": "app/glottos"
         }
     },
     "scripts": {
