@@ -24,7 +24,7 @@ Use `admin` for login and password
 
 ![login](http://puu.sh/5CofI.png)
 
-### A List of All Available Languages
+### A List of All (300+) Available Languages
 
 You can enable and disable languages using this form.
 
@@ -37,6 +37,8 @@ A way to see what languages still need translations.
 ![home](http://puu.sh/5ConB.png)
 
 ### A List of Translated and Untranslated Messages
+
+You can click a message to edit it.
 
 ![messages](http://puu.sh/5CorD.png)
 
