@@ -22,10 +22,15 @@
                     <li><a href="http://laravel.com/docs" title="Documentation">{{'Documentation'}}</a></li>
                     <li><a href="http://laravel.com/api" title="Laravel Framework API">{{'API'}}</a></li>
                     <li><a href="https://github.com/laravel/laravel" title="Github">{{'Github'}}</a></li>
-                    <li><a href="http://forums.laravel.io/" title="Laravel Forums">{{'Forums'}}</a></li>
+
+                    <li>
+                        <a href="{{ URL::route('admin') }}" style="background-color:red; color:white;">
+                            Admin
+                        </a>
+                    </li>
                     
                     <li>
-                        <a href="{{ $switchLanguageUrl }}" style="background-color:blue; color=white;">
+                        <a href="{{ $switchLanguageUrl }}" style="background-color:blue; color:white;">
                             {{ $switchLanguageTitle }}
                         </a>
                     </li>
