@@ -1,14 +1,8 @@
 <IfModule mod_rewrite.c>
-    #Options -MultiViews
+    Options -MultiViews
     RewriteEngine On
-    RewriteBase /
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ /glottos/index.php?/$1 [L]
 
-    SetEnv LARAVEL_ENV "development"
-    SetEnv LARAVEL_DATABASE_HOST "localhost"
-    SetEnv LARAVEL_DATABASE_NAME "antoniocarlosribeiro"
-    SetEnv LARAVEL_DATABASE_USERNAME "antoniocarlos"
-    SetEnv LARAVEL_DATABASE_PASSWORD "antoniocarlospassword"
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
 </IfModule>

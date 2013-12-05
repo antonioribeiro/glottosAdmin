@@ -1,6 +1,6 @@
 # Glottos Admin
 
-This repo is a **Proof of Concept** administration interface for the [Glottos Translator Package](https://github.com/antonioribeiro/glottos) for Laravel Artisans.
+This repo is a **Proof of Concept** administration interface for the [Glottos Online Translator Package](https://github.com/antonioribeiro/glottos) for Laravel Web Artisans.
 
 ### Installation
 
@@ -14,7 +14,7 @@ This repo is a **Proof of Concept** administration interface for the [Glottos Tr
 
 ### A Home Page
 
-This is basically the Laravel PHP home page, to be translated using Glottos
+This is basically the Laravel PHP home page, to be translated online using Glottos
 
 ![home](http://puu.sh/5Co50.jpg)
 

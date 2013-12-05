@@ -1,6 +1,7 @@
 .elasticbeanstalk/
 /bootstrap/compiled.php
 /vendor
+/public/.htaccess*
 app/config/development/*
 app/config/packages/pragmarx/glottos/config.php
 composer.phar
