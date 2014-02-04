@@ -23,7 +23,7 @@
                             <i class="fa fa-comments fa-5x"></i>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <p class="announcement-heading">{{ $stats->unique }}</p>
+                            <p class="announcement-heading">{{ $stats->messages }}</p>
                             <p class="announcement-text">Unique messages</p>
                             <p class="announcement-text">&nbsp;</p>
                         </div>
@@ -56,7 +56,7 @@
                         <div class="col-xs-6 text-right">
                             <p class="announcement-heading">{{ $stats->translated }}</p>
                             <p class="announcement-text">Translations</p>
-                            <p class="announcement-text">out of {{ $stats->unique * $stats->languages }}</p>
+                            <p class="announcement-text">out of {{ $stats->messages * $stats->languages }}</p>
                         </div>
                     </div>
                 </div>
@@ -70,9 +70,9 @@
                             <i class="fa fa-exclamation-triangle fa-5x"></i>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <p class="announcement-heading">{{ ($stats->unique*$stats->languages) - $stats->translated }}</p>
+                            <p class="announcement-heading">{{ ($stats->messages*$stats->languages) - $stats->translated }}</p>
                             <p class="announcement-text">Missing</p>
-                            <p class="announcement-text">out of {{ $stats->unique * $stats->languages }}</p>
+                            <p class="announcement-text">out of {{ $stats->messages * $stats->languages }}</p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
 						<tr>
 							<td><a href="{{ URL::route('admin.languages.show', [$language->language_id.'-'.$language->country_id]) }}">{{ $language->regional_name }}</a></td>
 							<td>{{ $language->translated }}</td>
-							<td>{{ $stats->unique-$language->translated }}</td>
+							<td>{{ $stats->messages-$language->translated }}</td>
 						</tr>
 					@endforeach
 				</table>

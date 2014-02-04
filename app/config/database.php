@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'postgresql',
+	'default' => 'mysql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -40,6 +40,25 @@ return array(
 	*/
 
 	'migrations' => 'migrations',
+
+
+
+
+	'connections' => array(
+
+		'mysql' => array(
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'glottos',
+			'username'  => 'glottos',
+			'password'  => 'glottos',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
+
+	),
+
 
 	/*
 	|--------------------------------------------------------------------------
