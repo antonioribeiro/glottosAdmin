@@ -15,11 +15,11 @@ class Users extends Migration {
 		{
 			$table->increments('id');
 
-			$table->text('email')->unique();
+			$table->string('email')->unique();
 
-			$table->text('password');
+			$table->string('password');
 
-			$table->text('name');
+			$table->string('name');
 
 			$table->timestamps();
 		});
