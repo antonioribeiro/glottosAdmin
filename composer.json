@@ -10,7 +10,7 @@
     "require": {
         "laravel/framework": "4.1.*",
         "cartalyst/sentry": "dev-master",
-        "way/generators": "dev-master",
+        "way/generators": "~2.0",
         "onigoetz/profiler": "dev-master",
         "pragmarx/glottos": "dev-master"
     },
